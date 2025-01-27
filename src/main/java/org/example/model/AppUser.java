@@ -16,6 +16,18 @@ public class AppUser {
     private Date registerDate;
     private String phone;
 
+    public AppUser() {
+    }
+
+    public AppUser(Long id, String name, String email, String password, Date registerDate, String phone) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.registerDate = registerDate;
+        this.phone = phone;
+    }
+
     public Long getId() {
         return id;
     }

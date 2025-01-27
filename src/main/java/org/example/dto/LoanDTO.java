@@ -1,8 +1,5 @@
 package org.example.dto;
 
-import org.example.model.AppUser;
-import org.example.model.Book;
-
 import java.util.Date;
 public class LoanDTO {
 
@@ -17,10 +14,19 @@ public class LoanDTO {
     public LoanDTO() {
     }
 
-    public LoanDTO(Long id, Long userId, Long bookId, String status, Date returnDate, Date loanDate, String bookName) {
+    public LoanDTO(Long id, Long user, Long book, String status, Date returnDate, Date loanDate, String bookName) {
         this.id = id;
-        this.user = userId;
-        this.book = bookId;
+        this.user = user;
+        this.book = book;
+        this.status = status;
+        this.returnDate = returnDate;
+        this.loanDate = loanDate;
+        this.bookName = bookName;
+    }
+
+    public LoanDTO(Long user, Long book, String status, Date returnDate, Date loanDate, String bookName) {
+        this.user = user;
+        this.book = book;
         this.status = status;
         this.returnDate = returnDate;
         this.loanDate = loanDate;

@@ -16,6 +16,19 @@ public class Book {
     private String isbn;
     private Date publishDate;
 
+    public Book() {
+
+    }
+
+    public Book(Long id, String title, String author, String category, String isbn, Date publishDate) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.category = category;
+        this.isbn = isbn;
+        this.publishDate = publishDate;
+    }
+
     public Long getId() {
         return id;
     }
@@ -39,7 +52,6 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-
 
     public String getCategory() {
         return category;
@@ -65,4 +77,3 @@ public class Book {
         this.publishDate = publishDate;
     }
 }
-
