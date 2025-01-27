@@ -17,3 +17,6 @@ a partir deste ponto o sistema está todo implementado no front-end. Incluindo a
 
 me adianto em dizer que o css não está perfeito pois dei uma importância menor ao mesmo para que o resto ficasse completo, visto novamente que o front nas instruções é apresentado como um 'bonus'
 
+
+Utilizei o Postgres 17
+
